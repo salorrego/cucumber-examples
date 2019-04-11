@@ -1,6 +1,5 @@
 const { Given } = require('cucumber');
 const agent = require('superagent-promise')(require('superagent'), Promise);
-const accessToken = require('./../../auth_config.json').access_token;
 
 const urlBase = 'https://api.github.com';
 

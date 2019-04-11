@@ -4,6 +4,7 @@ Feature: Option to check for repos
   Background:
     Given User is logged in
 
+  @skip
   Scenario: User checks for repos of salorrego
     When User tries to get repos of "salorrego"
     Then User should get public repos of "salorrego"
@@ -12,6 +13,7 @@ Feature: Option to check for repos
     When User tries to get "cucumber-examples" repo from "salorrego" user
     Then User should get a "cucumber-examples" repo with package.json file
 
+  @better
   Scenario: User gets cucumber-examples repo content flow
     When User tries to get repos of "salorrego"
     Then User should get public repos of "salorrego"
