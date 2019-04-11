@@ -127,4 +127,8 @@ Temporary Items
 # Ignore all local history of files
 .history
 
+### Ignore config file
+# Ignores the configuration file with the auth data
+auth_config.json
+
 # End of https://www.gitignore.io/api/osx,node,visualstudiocode
